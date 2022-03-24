@@ -1,2 +1,2 @@
 # CatReactApp
-Fetch Api with React.js
+App using fetch api with React.js
