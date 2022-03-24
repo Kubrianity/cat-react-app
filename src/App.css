@@ -1,0 +1,141 @@
+:root {
+    --text-color: #263238;
+	--body-color: #80deea;
+}
+* { box-sizing: border-box }
+
+html,body {
+	margin:0;
+	padding:0;
+	height:100%;
+
+}
+body {
+	color: var(--text-color);
+	background-color: var(--body-color);
+}
+
+main{ 
+	margin-top:15vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height:100%;
+}
+
+h1 {
+	font-family: 'Courgette', cursive; 
+	letter-spacing: 2px;
+	}
+select, 
+button {
+	border: none;
+	background:none;
+	outline: 0;
+}
+button {cursor: pointer}
+
+.SearchBox-input::placeholder {
+ background-color:white;
+	opacity: .6;
+}
+/* Chrome, Opera and Safari */
+.SearchBox-input::-webkit-input-placeholder {
+  background-color: white;
+}
+/* Firefox 19+ */
+.SearchBox-input::-moz-placeholder {
+  background-color: white;
+}
+/* IE 10+ and Edge */
+.SearchBox-input:-ms-input-placeholder {
+  background-color: white;
+}
+
+.SearchBox {
+	--height: 4em;
+	display: flex;
+	border-radius: var(--height);
+	background-color: rgba(212, 46, 88, 0.733);
+	height:var(--height);
+    margin-bottom:-1.5em;
+	margin-top:1em;
+	
+    }
+	.SearchBox:hover .SearchBox-input {
+		
+		padding-left: 1em;
+		padding-right:1em; 
+		width:80vw;
+		border-top-left-radius: var(--height);
+		border-bottom-left-radius: var(--height);
+	
+	}
+	.SearchBox-input {
+		width: 0;
+		color: rgba(255, 222, 113, 0.877);
+		font-weight:bold;
+		font-size:1.5em;
+		transition: .45s;
+		text-align:center;
+	    font-family: 'Patrick Hand', cursive;
+		cursor:pointer;
+		
+	}
+	.SearchBox-button {
+		margin:auto;
+		display: flex;
+		border-radius: 50%;
+		width:7.5em;
+		height:7em;
+		transition: .3s;
+		margin-top:-0.7em;
+	}
+	.SearchBox-button:active  {
+		transform: scale(.85);
+	}
+
+.cat-div{
+	font-family: 'Patrick Hand', cursive;
+	font-size:1.5em;
+	margin:1.5em;
+	text-align:center;
+		}
+.cat-img{
+	border-radius:50px;
+	width:70%;
+	height:auto;
+   }
+
+.optionClass{
+	background-color:rgba(212, 46, 88, 0.733);
+	cursor:pointer;
+	}
+   
+footer{
+	margin-top:15vh;
+	text-align:center;
+    font-family: 'Courgette', cursive;
+	font-weight: bold;
+	font-size:1.2em;
+   }
+
+@media screen and (min-width: 768px) and (max-width:1024px) {
+	.SearchBox:hover .SearchBox-input {
+		width: 500px;;
+	}
+	.cat-img{width:45%}
+	}
+
+@media screen and (min-width:1025px){
+	.SearchBox:hover .SearchBox-input {
+		width: 500px;;
+	}
+	.cat-img{width:35%}
+		
+	.cat-div{
+		max-width:75vw;
+	}
+}
