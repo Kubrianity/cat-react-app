@@ -4,7 +4,7 @@ This React.js application enables users to choose cat breeds from the list in or
 
 https://thecatapi.com is used for api endpoints in this project. 
 
-The link for the project: https://earnest-faun-ee055d.netlify.app/
+The link for the project: https://clever-queijadas-f9c693.netlify.app
 
 ## Installation
 * Use the command below to clone this repository <br>
