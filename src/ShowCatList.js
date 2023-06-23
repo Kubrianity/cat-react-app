@@ -42,7 +42,7 @@ function ShowCatList() {
       const breed_type = breedList.filter(breed => breed.name === nevVal)
       setInfo((preVal) => ({
         ...preVal,
-        img: breed_type[0].image.url,
+        img:`https://cdn2.thecatapi.com/images/${breed_type[0].reference_image_id}.jpg`,
         description: breed_type[0].description,
         temperament: breed_type[0].temperament,
         lifeSpan: breed_type[0].life_span,
